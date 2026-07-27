@@ -1,0 +1,43 @@
+body,p,a,span,div,input,legend,h1,h2,h3,h4,h5,h6,li,dd,dt,th,td{
+font-family:Arial, Helvetica, sans-serif;
+}
+body,p,a,span,div,input,legend,li,dd,dt,th,td{
+font-size:10pt;
+}
+.loginform {
+width:300px;
+margin:auto;
+font-size: 9pt;
+}
+
+.loginform  p {
+font-size: 9pt;
+}
+
+.loginform fieldset{
+padding:10px;
+}
+.loginform legend {
+font-weight: bold;
+font-size: 9pt;
+}
+.loginform label{
+display:block;
+height:2em;
+background-color:#E7E7E7;
+padding:10px 10px 0;
+}
+.loginform input {
+margin-right:20px;
+border:1px solid #999999;
+float:right;
+clear:right;
+background:#CCCCCC;
+}
+.loginform input:focus,.loginform input:hover {
+border:1px solid #333333;
+}
+.loginform .error{
+color:red;
+font-weight:bold;
+}

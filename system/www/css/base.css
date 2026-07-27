@@ -1,0 +1,390 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	min-width: 1000px;
+	height: 100%;
+	font-family: Verdana, Arial;
+	font-size: 12px;
+	color: #464545;
+}
+
+a:link,
+a:visited,
+a:active {
+	color: #464545;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+input, textarea{
+	border: 1px solid #A7DEF3;
+}
+
+#header {
+	background-repeat: repeat-x;
+	background-position: center;
+    float: left;
+    width: 100%;
+    margin: 0 -503px 0 0;
+	height: 289px;
+}
+	
+#header #nav {
+	background-repeat: no-repeat;
+	background-position: center;
+    float: left;
+    width: 302px;
+	height: 289px;
+}
+	
+#header #content {
+	background-repeat: repeat-x;
+	background-position: center;
+    margin: 0 503px 0 302px;
+	height: 289px;
+}
+	
+#header_right {
+	background-repeat: no-repeat;	
+	background-position: center;
+	text-align: right;
+    float: right;
+    width: 503px;
+	height: 289px;
+}
+
+#header_right p {
+	padding-right: 50px;
+	padding-top: 250px;
+}
+
+#main {
+    float: left;
+    width: 100%;
+    margin: 0 -215px 0 0;
+}
+	
+#main #nav {
+    float: left;
+    width: 270px;
+}
+	
+#main #content {
+    margin: 0 215px 0 270px;
+	padding-left: 10px;
+	text-align: left;
+}
+
+#main #content p{
+	margin-right: 30px;
+}
+
+#main #content #item_content_small p{
+	margin-right: 0;
+}
+	
+#main_right {
+    width: 215px;
+	float: right;
+}
+
+#bottom {
+	background-repeat: repeat-x;
+	background-position: center;
+    float: left;
+    width: 100%;
+    margin: 0 -220px 0 0;
+	height: 179px;
+}
+	
+#bottom #nav {
+	background-repeat: no-repeat;
+	background-position: center;
+    float: left;
+    width: 487px;
+	height: 179px;
+}
+	
+#bottom #content {
+	background-repeat: repeat-x;
+	background-position: center;
+    margin: 0 220px 0 487px;
+	height: 179px;
+}
+	
+#bottom_right {
+	background-repeat: repeat-x;	
+	background-position: center;
+    float: right;
+    width: 220px;
+	height: 179px;
+}
+
+#menu_text a:link,
+#menu_text a:visited,
+#menu_text a:active {
+	text-decoration: none;
+	font-size: 12px;
+}
+#menu_text a:hover {
+	text-decoration: underline;
+	font-size: 12px;
+}
+
+#menu_text{
+	margin-top: 10px;
+	margin-left: 20px;
+	padding-left: 10px;
+}
+
+#item {
+	width: 160px;
+	height: 190px;
+	border: 1px solid #b9b9b9;
+	text-align: center;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	float: left;
+	box-sizing: border-box;
+}
+
+/* Pins "купить" to the bottom of the box regardless of how much space the
+   name/price above it take up, so buttons line up across a row of items. */
+#item > center {
+	margin-top: auto;
+}
+
+#item_content {
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+}
+#item_content_small{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1 1 auto;
+	min-height: 0;
+	box-sizing: border-box;
+	padding-top: 10px;
+	overflow: hidden;
+}
+
+#item_name{
+	width: 100%;
+	font-weight: bold;
+}
+
+#item_block{
+    display: inline-block;
+}
+
+#buy_button{
+	margin-bottom: 5px;
+	line-height: 24px;
+	width: 62px;
+	background-color: #cbecf9;
+}
+
+#buy_button a:link,
+#buy_button a:visited,
+#buy_button a:active {
+	text-decoration: none;
+	border: 1px solid #b9b9b9;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	font-size: 12px;
+}
+
+#buy_button a:hover {
+	border: 1px solid #6e6e6e;
+	color: white;
+	font-size: 12px;
+}
+
+#items {
+	text-align: center;
+	width: 100%;
+	float: left;
+}
+
+#cart_block {
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 170px;
+	height: 170px;
+	text-align: center;
+	border: 1px dashed #A7DEF3;
+}
+
+#cart {
+	width: 100px;
+	height: 125px;
+	margin: 10px;
+	margin-left: 35px;
+	text-align: center;
+	background-image: url(../img/shop_cart.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	border: 1px solid white;
+}
+
+#cart #count {
+	margin: 5px;
+	margin-top: 90px;
+}
+
+#cart #total {
+	margin-top: 5px;
+}
+#cart #view_cart_link {
+	margin-top: 15px;
+}
+
+#item_price span{
+	font-weight: bold;
+}
+#buy_button {
+	margin-top: 4px;
+}
+
+#pagination  {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: Verdana, Arial;
+	font-size: 14px;
+	color: gray;
+	text-decoration: none;
+}
+
+#pagination a:link,
+#pagination a:visited,
+#pagination a:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: gray;
+	text-decoration: none;
+}
+#pagination a:hover {
+	text-decoration: underline;
+}
+
+#login_info {
+	font-size: 11px;
+	margin-left: 10px;
+}
+#login_info input {
+	border: 1px solid #A7DEF3;
+}
+#login_info #password,
+#login_info #login{
+	width: 105px;
+}
+#error {
+	color: red;
+	text-align: center;
+	width: 100%;
+}
+#error_reg {
+	color: red;
+	width: auto;
+	margin-bottom: 5px;
+}
+#error_main {
+	color: red;
+	text-align: center;
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+}
+#regform input {
+	width: 200px;
+}
+#regform textarea {
+	width: 200px;
+}
+#regform  td td{
+	text-align: right;
+}
+#regform {
+	text-align: left;
+}
+#regform  td {
+	padding-top: 9px;
+	padding-bottom: 5px;
+	border-bottom: 1px dotted #b9b9b9;
+}
+#plus_button{
+	background: url(../img/plus.jpg) no-repeat;
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	margin-left: 4px;
+	float: left;
+}
+#plus_button:hover {
+	background: url(../img/plus_hover.jpg) no-repeat;
+}
+#minus_button{
+	background: url(../img/minus.jpg) no-repeat;
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	margin-left: 4px;
+	float: left;
+}
+#minus_button:hover {
+	background: url(../img/minus_hover.jpg) no-repeat;
+}
+
+#del_button{
+	background: url(../img/error.jpg) no-repeat;
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+}
+#del_button:hover {
+	background: url(../img/error_hover.jpg) no-repeat;
+}
+#cart_table {
+	margin-top: 25px;
+}
+#reg_form_block {
+	float: left;
+	width: 100%;
+}
+#reg_form_block input, 
+#reg_form_block textarea,
+#forgot_password_block input {
+	background-color: #E8F7FE;
+	border-color: #A7DEF3;
+}
+#reg_form_error_block {
+	text-align: left;
+	width: 450px;
+}
+#bottom_contacts {
+	font-size: 22px;
+	text-align: center;
+	margin-top: 100px;
+	margin-left: 220px;
+}
+#bottom_copyright {
+	font-size: 11px;
+	float: right;
+	margin-right: 8px;
+	margin-top: 145px;
+}

@@ -1,0 +1,75 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html { background: #380101 url(../images/page_top.gif) top left repeat-x; color: #FFFFFF; font: 76% Arial, Helvetica, sans-serif; text-align: center;	}
+body { text-align: left; width: 925px; margin: 0 auto; margin-top: 50px; }
+
+#logout { font-family: Arial, Helvetica, sans-serif; font-size: 11px; margin-bottom: 5px; float: right; color: #8B321F;}
+#logout a:link, #logout a:visited { color: #E73800;	}
+
+#header {
+	clear: both;
+	font-size: 24px;
+	font-family: Times New Roman, Times, serif;
+	width: 925px;
+	margin-bottom: 10px;
+}
+
+.clear { clear: both; height: 0px;	}
+.hide { display:none;	}
+
+.left {float: left;}
+.right {float: right;}
+
+a:link, a:visited, a:active { color: #0e7fc7; text-decoration: none; outline: 0;	}
+a:hover { text-decoration: underline;	}
+ul { list-style: none;	}
+
+#siteNav { background: #DE2600 url(../images/nav_bg.gif) top left no-repeat;
+			line-height: 1em;	}
+#siteNav a { text-decoration: none; display: block;	}
+#siteNav ul { margin-left: 15px; padding-top: 4px;	}
+#siteNav ul:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;	}
+	
+#siteNav li { float: left; position: relative; font-size: 12px; text-align: center;	}
+#siteNav li a { padding: 8px 12px 8px 12px;	}
+#siteNav li a:link, #siteNav li a:visited { background: transparent url(../images/site_nav_borders.gif) bottom right no-repeat; color: #fff;	}
+#siteNav li a:hover { background: #EE724A url(../images/site_nav_hover_bg.gif) bottom left repeat-x; color: #fff;	}
+#siteNav li.current a { margin-bottom: -1px;	}
+#siteNav li.current a:link ,#siteNav li.current a:hover { background-color: #ffffff; background-image: none; cursor: default; color: #37454e; border-bottom: 1px solid #fff;	}
+
+#siteNav a { text-decoration: none; display: block;	}
+
+/* Automatic Page Highlighting */
+
+#menu #menunav a,
+#users #usersnav a,
+#adminusers #adminusersnav a,
+#requests #requestsnav a
+{ margin-bottom: -1px;	}
+
+
+#menu #menunav a:link ,#menu #menunav a:hover,#menu #menunav a:visited,
+#users #usersnav a:link ,#users #usersnav a:hover,#users #usersnav a:visited,
+#adminusers #adminusersnav a:link ,#adminusers #adminusersnav a:hover,#adminusers #adminusersnav a:visited,
+#requests #requestsnav a:link ,#requests #requestsnav a:hover,#requests #requestsnav a:visited
+
+{ background-color: #ffffff; background-image: none; cursor: default; color: #37454e; border-bottom: 1px solid #fff;	}
+
+
+#menu #menunav ul,
+#users #usersnav ul,
+#adminusers #adminusersnav ul,
+#requests #requestsnav ul
+{ padding-bottom: 1px;	}
+
+#content { color: #000000; margin-top: 25px; }
+#content p{ line-height: 16px; }
+#content h2 { font-family:  Arial, Verdana, sans-serif; font-weight: normal; line-height: 1em; text-align: left; font-size: 25px; padding: 25px 0 10px 0; margin: 0;color:#FF3A00;	}
+#content h3 { line-height: 1em; font-size: 14px; padding: 15px 0 5px 0; margin: 0;color:#333;	}
+
+#wrapperWit { background-color: #fff; background-image: none; border-top: 1px solid #fff;	}
+#wrapperWit #content { width: 877px; padding:0 0 40px 25px;float:left; }
+#wrapperWit #gooey { background: transparent url(../images/wrapper_column_bottom.gif) bottom left no-repeat;}

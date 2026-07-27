@@ -1,0 +1,42 @@
+services:
+  db:
+    # MariaDB instead of MySQL 5.7: 5.7 has no arm64/Apple Silicon image, and
+    # MariaDB still defaults to mysql_native_password auth, which the app's
+    # legacy ext/mysql PHP driver needs (MySQL 8's caching_sha2_password won't work).
+    image: mariadb:10.6
+    container_name: tvids_mysql
+    restart: unless-stopped
+    command: --sql_mode=NO_ENGINE_SUBSTITUTION
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: tvids_db_0
+      MYSQL_USER: tvids_usr_0
+      MYSQL_PASSWORD: XzUO50AR3fds
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      # Dump is auto-imported here on first container start (empty data dir only).
+      - ./docker/mysql-init:/docker-entrypoint-initdb.d:ro
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tvids_web
+    restart: unless-stopped
+    depends_on:
+      - db
+    ports:
+      - "8080:80"
+    environment:
+      # database.php falls back to "localhost" (production) unless this is set.
+      DB_HOSTNAME: db
+      # config.php falls back to the production domain unless this is set —
+      # otherwise every form action/link/asset URL points at the live site.
+      BASE_URL: http://localhost:8080/
+    volumes:
+      - .:/var/www/html
+
+volumes:
+  db_data:

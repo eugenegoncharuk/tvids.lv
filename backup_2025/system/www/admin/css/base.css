@@ -1,0 +1,35 @@
+#tablestyle {
+	border: 1px solid #666666;
+}
+
+a {
+	font-family: "lucida grande", verdana, sans-serif;
+	font-size: 8pt;
+} 
+
+#tablestyle tbody tr td {
+	font-family: "lucida grande", verdana, sans-serif;
+	font-size: 8pt;
+	padding: 3px 8px;
+	border-left: 1px solid #D9D9D9;
+	border-bottom: 1px solid #D9D9D9;
+	text-align: center;
+}
+
+tbody #tableheadstyle{
+	background-color: #E0E0E0;
+}
+
+tbody #tablerowstyle {
+  background: #FFFFFF;
+  cursor:pointer;
+}
+
+tbody #tablerowstyle:hover {
+  background: #E6EBEC;
+}
+
+.error{
+color:red;
+font-weight:bold;
+}

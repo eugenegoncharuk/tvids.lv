@@ -1,0 +1,66 @@
+.treeview {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.treeview li{ /*Style for LI elements in general (excludes an LI that contains sub lists)*/
+background: url(list.gif) no-repeat left center;
+list-style-type: none;
+padding-left: 14px;
+margin-bottom: 3px;
+margin-left: -3px;
+}
+
+.treeview li.submenu{ /* Style for LI that contains sub lists (other ULs). */
+background: url(closed.gif) no-repeat left 1px;
+cursor: hand !important;
+cursor: pointer !important;
+}
+
+.treeview li.submenu ul{ /*Style for ULs that are children of LIs (submenu) */
+display: none; /*Hide them by default. Don't delete. */
+}
+
+.treeview .submenu ul li{ /*Style for LIs of ULs that are children of LIs (submenu) */
+cursor: default;
+margin-left: 0px;
+}
+
+.treeview li a{
+padding-left: 5px;.
+}
+
+.treeview li img{
+	border: 0;
+}
+
+.treeview li.r1 {
+}
+
+.submenu{
+	width: 242px;
+}
+
+.submenu li {
+	width: 228px;
+}
+
+.submenu li li {
+	width: 214px;
+}
+
+.submenu li li li{
+	width: 200px;
+}
+
+.submenu li li li li{
+	width: 186px;
+}
+
+.submenu li li li li li{
+	width: 172px;
+}
+
+.node{
+	width: 242px;
+}
