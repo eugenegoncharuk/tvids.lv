@@ -139,7 +139,7 @@ class Web extends Controller {
 		$this->_print_measured_time("");
 		
 		if ($pid==1) {
-			redirect('web/show/270');
+			redirect('web/show/284');
 		}
 
 		// "Категория комплектов" nodes are just a grouping level (e.g. "Бязь -
